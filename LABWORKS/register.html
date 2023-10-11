@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-color:pink ;
+        }
+      
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color:palevioletred;
+            overflow: hidden;
+        }
+
+        /* Style the navbar items */
+        ul.navbar li {
+            float: left;
+        }
+
+        ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the navbar item color on hover */
+        ul.navbar li a:hover {
+            background-color: #555;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px #000000;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #258cd1;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About SDG-4</a></li>
+        <li><a href="register.html">Volunteer Registration</a></li>
+        <li><a href="admin.html">Admin Panel</a></li>
+    </ul>
+    <form action="registration_process.php" method="post">
+        <h1>SDG Registration</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <input type="submit" value="Register">
+    </form>
+    
+</body>
+</html>
+
+
